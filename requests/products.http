@@ -1,0 +1,30 @@
+@api =http://localhost:5500/products
+##Obtener todos los productos
+GET {{api}}
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name":"Audifonos",
+    "description":"Lenovo bt"
+}
+
+### Obtener producto por ID
+GET {{api}}/3
+
+### Eliminar Producto por ID
+DELETE {{api}}/7
+
+### Contar los productos
+GET {{api}}/count
+
+### Actualizar Productos
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "name": "laptop",
+    "description": "some laptop",
+    "quantity": 20
+}
